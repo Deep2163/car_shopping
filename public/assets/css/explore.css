@@ -1,0 +1,106 @@
+.page {
+    display: flex;
+}
+.side-panel {
+    margin-left: 10px;
+    margin-top: 105px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 260px;
+    height: 570px;
+}
+
+.side-panel h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.side-panel label {
+    font-size: 1.8em;
+    display: block;
+    margin-top: 10px;
+}
+.price_max {
+    /* margin-left: 40px; */
+    font-size: 1.3em;
+}
+.price_range {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.side-panel select {
+    font-size: 1.3em;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.side-panel button {
+    height: 40px;
+    width: 100%;
+    margin-top: 90px;
+    color: white;
+    font-size: 2em;
+    background-color: rgb(255, 74, 74);
+    border-radius: 7px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.car-cover-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.car-cover-wrapper .items {
+    width: 30%;
+}
+
+.car-cover-wrapper .items img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 540px) {
+    .car-cover-wrapper .items {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .car-cover-wrapper .items {
+        width: 100%;
+    }
+    .side-panel {
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .car-cover-wrapper .items {
+        width: 90%;
+    }
+    .side-panel {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 425) {
+    .car-cover-wrapper .items {
+        width: 30%;
+    }
+    .side-panel {
+        display: none;
+    }
+}

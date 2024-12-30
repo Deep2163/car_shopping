@@ -1,0 +1,161 @@
+.welcome-admin {
+    font-size: 30px;
+    font-family: cursive;
+    color: #1c478e;
+    text-align: center;
+    margin-top: 10px;
+}
+.logout-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    justify-content: end;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand{
+   margin: 5px;
+}
+.menu_item {
+   margin: 20px;
+   
+}
+.menu a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #111;
+}
+.logout{
+   justify-content: center;
+}
+.logout_icon{
+   width: 12%;
+}
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 7px;
+}
+
+.update {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.update h2 {
+    width: 80%;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.update p {
+    margin: 5px;
+}
+
+.update {
+    justify-content: center;
+    height: 350px;
+    width: 520px;
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 6px;
+    box-shadow: 1px 1px;
+}
+
+.sales_img {
+    width: 100%;
+}
+
+.uppar {
+    display: flex;
+}
+
+.updates {
+    justify-content: center;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 1px 1px;
+}
+
+.status {
+    font-size: 30px;
+    text-align: center;
+}
+.updates_div {
+    text-align: center;
+    display: flex;
+    margin: 20px;
+}
+.boxes {
+    width: 25%;
+    height: 15%;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+}
+
+p {
+    font-size: 17px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+/* for responsive menubar */
+@media screen and (max-width: 700px) {
+   .menu {
+     width: 100%;
+     height: auto;
+     position: relative;
+   }
+   .menu a {float: left;}
+   div.content {margin-left: 0;}
+ }
+ 
+ /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+ @media screen and (max-width: 400px) {
+   .welcome-admin{
+      font-size: 50px;
+   }
+   .uppar{
+      flex-wrap: wrap;
+   }
+   .update{
+      width: 100%;
+   }
+ }

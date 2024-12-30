@@ -1,0 +1,116 @@
+.hero {
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 5.5vw;
+    font-family: cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light-purple);
+}
+
+.hero h2 {
+    margin: 3rem auto;
+    font-family: cursive;
+    font-size: 25px;
+    font-family: "lucida console";
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.hero .names {
+    overflow: hidden;
+    font-size: 28px;
+    font-family: cursive;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 4s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+.hero-rbg1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: mymove 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes mymove {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 200px;
+    }
+}
+.hero-srt1 {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    animation: mymove2 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+}
+@keyframes mymove2 {
+    from {
+        left: 200px;
+    }
+    to {
+        left: -100px;
+    }
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+@media only screen and (max-width: 540px) {
+    .hero-srt1 .hero-rbg1 {
+        width: 38%;
+    }
+    .names{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    .hero-srt1 .hero-rbg1 {
+        width: 20%;
+    }
+    .names{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-srt1 .hero-rbg1 {
+        width: 44%;
+    }
+    .names{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .hero-srt1 .hero-rbg1 {
+        width: 20%;
+    }
+    .names{
+        display: flex;
+        font-size: 20px;
+        flex-wrap: wrap;
+
+    }
+}
